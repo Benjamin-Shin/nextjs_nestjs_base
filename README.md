@@ -1,5 +1,15 @@
 # Project based on Next.js + Nest.js 
 
+## Development Stack
+
+* Language : Typescript
+* Database : SQLite
+* Backend : Nest.js
+  * ORM: Prisma
+  * Tools: Swagger
+* Frontend : Next.js
+  * UI : Chakra UI
+
 
 ## Getting Started
 
