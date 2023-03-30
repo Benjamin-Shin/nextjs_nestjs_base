@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# db
+.db
+.db-journal
+
 # testing
 /coverage
 
