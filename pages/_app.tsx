@@ -1,4 +1,3 @@
-import '@/styles/globals.css';
 import * as React from 'react';
 import type { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
