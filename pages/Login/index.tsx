@@ -55,7 +55,6 @@ const Login: React.FC = (props) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Flex justify="center">
         <VStack mb={6}>
           <div className="container px-5 py-10 mx-auto w-100">
