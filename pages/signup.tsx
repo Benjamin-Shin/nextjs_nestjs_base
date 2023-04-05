@@ -74,7 +74,7 @@ const Signup: React.FC = (props) => {
     <div className="container px-5 py-10 mx-auto w-2/3">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-4xl text-gray-700 font-semibold">
-          Sign Up
+          회원가입
         </h1>
       </div>
       <form
@@ -86,13 +86,13 @@ const Signup: React.FC = (props) => {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="name"
           >
-            Name
+            이름
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="name"
             type="text"
-            placeholder="Name"
+            placeholder="이름을 입력하세요."
             required
             ref={nameInputRef}
           />
@@ -102,13 +102,13 @@ const Signup: React.FC = (props) => {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="email"
           >
-            Email
+            이메일 ID
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="email"
             type="text"
-            placeholder="Email"
+            placeholder="Email을 입력하세요."
             required
             ref={emailInputRef}
           />
@@ -118,7 +118,7 @@ const Signup: React.FC = (props) => {
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="password"
           >
-            Password
+            패스워드
           </label>
           <input
             className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
@@ -137,7 +137,7 @@ const Signup: React.FC = (props) => {
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
-            Sign Up
+            회원가입
           </button>
         </div>
       </form>
