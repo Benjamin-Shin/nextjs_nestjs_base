@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import classNames from 'classnames';
 import { DarkModeSwitch } from '@/pages/components/DarkModeSwitch';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { signIn, signOut, useSession } from 'next-auth/react';
 
+import { useTranslation } from 'next-i18next';
+
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
   const { data: session, status } = useSession();
+  const { t } = useTranslation('common');
 
   console.log('Session User Name: ' + JSON.stringify(session));
   console.log('Session User Status: ' + JSON.stringify(status));
@@ -45,16 +47,16 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-1">
               <div className="py-5 px-3 text-gray-700 hover:text-gray-900">{session.user?.name}</div>
               <button className="py-5 px-3" onClick={() => signOut()}>
-                로그아웃
+                {t('Logout')}
               </button>
             </div>
           ) : (
             <div className="hidden md:flex items-center space-x-1">
               <a href="/api/auth/signin" className="py-5 px-3">
-                로그인
+                {t('Login')}
               </a>
               <a href="/signup" className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300">
-                회원가입
+                {t('Signup')}
               </a>
             </div>
           )}
@@ -76,16 +78,16 @@ const Navbar = () => {
               Menu2
             </a>
             <button className="block py-2 px-4 text-sm hover:bg-gray-200" onClick={() => signOut()}>
-              Log out
+            {t('Logout')}
             </button>
           </div>
         ) : (
           <div>
             <a href="/api/auth/signin" className="block py-2 px-4 text-sm hover:bg-gray-200">
-              Login
+              {t('Login')}
             </a>
             <a href="/signup" className="block py-2 px-4 text-sm hover:bg-gray-200">
-              Signup
+            {t('Signup')}
             </a>
           </div>
         )}

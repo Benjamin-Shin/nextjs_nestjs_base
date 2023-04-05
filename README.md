@@ -6,6 +6,9 @@
 * #Phase-2 Next-Auth + Tailwindcss/Chakra-UI + Sign In/Out Page added.
   * Blog: https://endev.tistory.com/154
   * Github Tag: https://github.com/Benjamin-Shin/nextjs_nestjs_base/tree/Blog_2
+* #Phase-3 Next.js + i18Next
+  * Blog: https://endev.tistory.com/155
+  * Github Tag: https://github.com/Benjamin-Shin/nextjs_nestjs_base/tree/Blog_3
 
 
 ## Development Stack
@@ -16,7 +19,8 @@
   * ORM: Prisma
   * Tools: Swagger
 * Frontend : Next.js
-  * UI : Chakra UI
+  * UI : Chakra UI, TailwindCSS
+  * Tools: i18next
 
 
 ## Getting Started

@@ -1,7 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Navbar from '@/pages/components/Navbar';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { Flex, Heading, VStack } from '@chakra-ui/react';
 
@@ -25,5 +25,13 @@ const Home: NextPage = () => {
     </div>
   );
 };
+
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
 
 export default Home;
