@@ -6,13 +6,15 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = "postgresql://tphc:CANal1@192.168.122.18:35432/tphcdb?schema=public"
 }
 
 model user {
   id        Int       @id @default(autoincrement())
   email     String    @unique
-  password  String
   name      String?
+  password  String
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @updatedAt @map(name: "updated_at")
 }
