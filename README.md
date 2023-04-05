@@ -5,7 +5,7 @@
   * Github Tag: https://github.com/Benjamin-Shin/nextjs_nestjs_base/tree/untagged-a14f2e67818a3bb6e192
 * #Phase-2 Next-Auth + Tailwindcss/Chakra-UI + Sign In/Out Page added.
   * Blog: https://endev.tistory.com/154
-  * Github Tag: 
+  * Github Tag: https://github.com/Benjamin-Shin/nextjs_nestjs_base/tree/Blog_2
 
 
 ## Development Stack
